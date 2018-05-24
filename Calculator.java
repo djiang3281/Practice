@@ -1,4 +1,9 @@
+import java.util.Scanner;
 public class Calculator{
+
+    public Calculator(){
+	System.out.println("Input two numbers");
+    }
 
     public static double add(double a, double b){
 	double ans = a + b;
@@ -6,7 +11,7 @@ public class Calculator{
     }
 
     public static double subtract(double a, double b){
-	double ans = a + b;
+	double ans = a - b;
 	return ans;
     }
 
@@ -28,9 +33,15 @@ public class Calculator{
 	return a;
     }
     
-    public static void Main(String[] args){
-	System.out.println();
-	System.out.println();
-	System.out.println();
+    public static void main(String[] args){
+        Calculator Ned = new Calculator();
+	Scanner sc = new Scanner(System.in);
+	double num0 = sc.nextDouble();
+	double num1 = sc.nextDouble();
+	System.out.println("addition: " + add(num0, num1));
+	System.out.println("subtraction: " + subtract(num0, num1));
+	System.out.println("multiplication: " + multiply(num0, num1));
+	System.out.println("division: " + divide(num0, num1));
+	System.out.println("powerOf: " + powerOf(num0, num1));
     }
 }
