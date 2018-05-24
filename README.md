@@ -1,5 +1,6 @@
 # Practice
 To update repository
+
 0. git pull
 1. git add .
 2. git commit ''
