@@ -18,9 +18,9 @@ public class NumGuess{
 	    System.exit(0);
 	}
 	if(i < rng){
-	    return "\nToo low!\n";
+	    return "\nToo low loser!\n";
 	}
-	return "\nToo high!\n";
+	return "\nToo high sucker!\n";
     }
     
     public static void main(String[] args){
